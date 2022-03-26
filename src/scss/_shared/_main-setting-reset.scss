@@ -6,6 +6,10 @@ body {
   &.is-hideScroll {
     overflow: hidden !important;
     width: 100%;
+
+    .overlay {
+      display: block;
+    }
   }
 }
 
@@ -20,11 +24,11 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0;
-  padding: 0;
+  padding: 110px 0 0;
   background-color: #ffffff;
   line-height: 1.42857143;
   font-size: 14px;
-  font-weight: normal;
+  font-weight: 500;
   font-family: 'Raleway', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

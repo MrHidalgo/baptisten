@@ -3,5 +3,24 @@
 nav#header.header
   .c-grid
     .header__wrapper
+      .header__wrapper-left
+
+        .logo.logo--header
+          a.logo__btn(href="#")
+            img(src="img/logo-brand-1.png" srcset='img/logo-brand-1@2x.png 2x' alt="")
+            img(src="img/logo-brand-2.svg" alt="")
+
+        +hamburger()
+
+      .header__wrapper-right
+
+        nav.header__nav
+          a.is-active(href="/index.html") Startseite
+          a(href="/about.html") Über Uns
+          a(href="/sub-communities.html") Teilgemeinden
+          a(href="/media.html") Medien
+          a(href="/current.html") Aktuelles
+          a(href="/facilities.html") Einrichtungen
+          a(href="/contact.html") Kontakt
 
 // HEADER :: END

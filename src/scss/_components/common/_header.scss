@@ -1,5 +1,101 @@
 // HEADER :: START
 
-.header {}
+.header {
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    height: 110px;
+    @include adaptive(767) {
+      height: 80px;
+    }
+
+    &-left {
+      @include adaptive(1279) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex: 1;
+        min-width: 1px;
+        max-width: 100%;
+      }
+    }
+
+    &-right {
+      flex: 1;
+      min-width: 1px;
+      max-width: 100%;
+      padding-left: 60px;
+      @include adaptive(1279) {
+        z-index: 9999;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateX(-100%);
+        overflow: hidden;
+        overflow-y: auto;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        max-width: 320px;
+        height: 100%;
+        padding: 50px 20px;
+        background-color: #ffffff;
+
+        &.is-open {
+          opacity: 1;
+          visibility: visible;
+          transform: translateX(0);
+          @include transition(opacity, visibility, transform);
+        }
+
+        &.is-animate {
+          @include transition(opacity, visibility, transform);
+        }
+      }
+      @include adaptive(767) {
+        max-width: calc(100% - 50px);
+      }
+    }
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    @include adaptive(1279) {
+      flex-direction: column;
+    }
+
+    a {
+      position: relative;
+      display: flex;
+      font-size: 18px;
+      line-height: 24px;
+      color: #000000;
+      @include hoverState(#F8B235);
+
+      &:not(:last-of-type) {
+        margin-right: 35px;
+        @include adaptive(1279) {
+          margin-right: 0;
+          margin-bottom: 35px;
+        }
+      }
+
+      &.is-active {
+        &:before,
+        &:after {
+          width: 50%;
+        }
+      }
+    }
+  }
+}
 
 // HEADER :: END

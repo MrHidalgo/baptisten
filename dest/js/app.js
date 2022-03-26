@@ -103,6 +103,28 @@ __webpack_require__.r(__webpack_exports__);
 window.addEventListener('load', function (ev) {
   // COMMON
   _common_common__WEBPACK_IMPORTED_MODULE_0__["default"].initLoad(); // MACROS
+
+  function initHamburger() {
+    document.querySelector("[hamburger-js]").addEventListener("click", function (e) {
+      if (e.currentTarget.classList.contains("is-active")) {
+        e.currentTarget.classList.remove("is-active");
+        document.querySelector('.header__wrapper-right').classList.remove('is-open');
+        document.querySelector('.header__wrapper-right').classList.add('is-animate');
+        setTimeout(function () {
+          document.querySelector('.header__wrapper-right').classList.remove('is-animate');
+        }, 300);
+      } else {
+        e.currentTarget.classList.add("is-active");
+        document.querySelector('.header__wrapper-right').classList.add('is-open');
+      }
+
+      document.querySelectorAll("html, body").forEach(function (val, idx) {
+        val.classList.toggle("is-hideScroll");
+      });
+    }, false);
+  }
+
+  initHamburger();
 }, false); // EVENT LISTENER - SCROLL
 // ========================================
 
