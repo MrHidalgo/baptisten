@@ -1,0 +1,14 @@
+---
+title: Bap Tis Ten
+
+pageClassName: p-home
+---
+extends shared/_layout
+
+block footer
+block content
+  main.main.main--start(class!= pageClassName)
+
+    +heading('about', 'img-describe-bg.jpg', 'Über Uns')
+
+    include components/about/testimonials

@@ -1,0 +1,116 @@
+// SECTION :: START
+
+.testimonials {
+  padding-top: 200px;
+  padding-bottom: 75px;
+  @include adaptive(1279) {
+    padding-top: 150px;
+  }
+  @include adaptive(767) {
+    padding-top: 125px;
+    padding-bottom: 50px;
+  }
+
+  &__bg {
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: -50px;
+    width: calc(100% + 100px);
+    height: 100%;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    transform: translateX(40px);
+
+    span {
+      width: 100%;
+      height: 20px;
+      @include adaptive(767) {
+        height: 75px;
+      }
+
+      &:nth-of-type(1) {
+        transform: rotate(-4deg) translateX(-60px);
+        background-color: #80c4e2;
+      }
+      &:nth-of-type(2) {
+        transform: rotate(-4deg) translateX(-40px);
+        background-color: #f8b235;
+      }
+      &:nth-of-type(3) {
+        transform: rotate(-4deg) translateX(-20px);
+        background-color: #a8cf89;
+      }
+    }
+  }
+
+  &__wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 1110px;
+    margin-left: auto;
+    margin-right: auto;
+    @include adaptive(1279) {
+      max-width: 768px;
+    }
+    @include adaptive(1023) {
+      max-width: 600px;
+    }
+    @include adaptive(767) {
+      max-width: 100%;
+    }
+  }
+
+  &__content {
+    z-index: 2;
+    position: relative;
+    padding: 20px 10px;
+    background-color: #ffffff;
+    text-align: center;
+    @include adaptive(767) {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+  }
+
+  &__desc {
+    width: 100%;
+    max-width: 890px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+    @include adaptive(1279) {
+      font-size: 22px;
+    }
+    @include adaptive(1023) {
+      font-size: 20px;
+    }
+    @include adaptive(767) {
+      font-size: 18px;
+    }
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    color: #000000;
+    @include adaptive(1279) {
+      font-size: 33px;
+    }
+    @include adaptive(1023) {
+      font-size: 30px;
+    }
+    @include adaptive(767) {
+      font-size: 26px;
+    }
+  }
+}
+
+// SECTION :: END

@@ -1,5 +1,6 @@
 // COMMON :: START
 
+
 .overlay {
   z-index: 990;
   display: none;
@@ -11,5 +12,88 @@
   height: 100%;
   background-color: rgba(#000, 0.55);
 }
+
+
+.heading {
+  position: relative;
+
+  &__bg {
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    > img {
+      z-index: 1;
+      @extend %imageResCoverAbs;
+    }
+
+    &:after {
+      content: '';
+      z-index: 2;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(87, 177, 216, 0.65);
+    }
+
+    &-block {
+      z-index: 3;
+      position: absolute;
+      left: 0;
+      bottom: -70px;
+      width: 100%;
+      height: 152px;
+      background-color: #ffffff;
+      box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.1);
+      transform: skewY(-4deg);
+      @include adaptive(767) {
+        height: 100px;
+      }
+    }
+  }
+
+  &__wrapper {
+    z-index: 2;
+    position: relative;
+    padding-top: 235px;
+    padding-bottom: 315px;
+    @include adaptive(1439) {
+      padding-top: 200px;
+      padding-bottom: 275px;
+    }
+    @include adaptive(1279) {
+      padding-top: 175px;
+      padding-bottom: 225px;
+    }
+    @include adaptive(767) {
+      padding-top: 125px;
+      padding-bottom: 175px;
+    }
+  }
+
+  &__title {
+    font-weight: 800;
+    font-size: 100px;
+    line-height: 1;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #F8B235;
+    @include adaptive(1439) {
+      font-size: 90px;
+    }
+    @include adaptive(1279) {
+      font-size: 75px;
+    }
+    @include adaptive(767) {
+      font-size: 45px;
+    }
+  }
+}
+
 
 // COMMON :: END
