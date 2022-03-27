@@ -37,6 +37,7 @@ body {
   }
 
   > .main {
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: center;
