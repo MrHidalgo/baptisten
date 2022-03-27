@@ -1,0 +1,92 @@
+// SECTION :: START
+
+.newsletter {
+  padding-top: 150px;
+  padding-bottom: 100px;
+  @include adaptive(1279) {
+    padding-top: 125px;
+  }
+  @include adaptive(767) {
+    padding-top: 100px;
+  }
+
+  &__label {
+    padding-bottom: 50px;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 950px;
+    margin-left: auto;
+    margin-right: auto;
+
+    &-info {
+      padding-bottom: 10px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+      color: #000000;
+      @include adaptive(767) {
+        text-align: center;
+      }
+    }
+
+    &-group {
+      display: flex;
+      justify-content: space-between;
+      @include adaptive(767) {
+        flex-wrap: wrap;
+      }
+
+      > div {
+        width: 100%;
+        max-width: calc((100% - 100px) / 2);
+        @include adaptive(767) {
+          max-width: 100%;
+        }
+      }
+    }
+
+    &-field {
+      margin-bottom: 15px;
+
+      label {
+        display: flex;
+        width: 100%;
+
+        input,
+        select {
+          outline: none;
+          position: relative;
+          width: 100%;
+          height: 60px;
+          padding: 0;
+          margin: 0;
+          border-radius: 0;
+          border: none;
+          border-bottom: 1px solid #F8B235;
+          box-shadow: none;
+          background-color: transparent;
+          font-weight: 400;
+          font-size: 18px;
+          color: #000000;
+          @include inputPlaceholder {
+            font-weight: 400;
+            font-size: 18px;
+            color: #000000;
+          }
+        }
+      }
+
+      .c-btn {
+        &__wrapper {
+          padding-top: 65px;
+        }
+      }
+    }
+  }
+}
+
+// SECTION :: END

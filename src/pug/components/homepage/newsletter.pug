@@ -1,0 +1,52 @@
+// SECTION :: START
+
+section#newsletter.newsletter
+  .c-grid
+    .newsletter__wrapper
+
+      .c-line
+      h2.newsletter__title.c-title Newsletter
+      p.newsletter__label.c-label Wir versenden monatlich einen Newsletter. Hier kannst Du Dich dafür anmelden.
+
+      form.newsletter__form(action='' method='' autocomplete='off')
+
+        p.newsletter__form-info Bitte füllen Sie die Felder mit einem * aus (Pflichtfelder)
+
+        .newsletter__form-group
+          div
+            .newsletter__form-field
+              label
+                input(type='text' placeholder='Vorname*' required)
+          div
+            .newsletter__form-field
+              label
+                input(type='text' placeholder='Nachname*' required)
+
+        .newsletter__form-field
+          label
+            input(type='email' placeholder='E-Mail Adresse*' required)
+
+        .newsletter__form-group
+          div
+            .newsletter__form-field
+              label
+                select(name='')
+                  option(value='0' selected hidden) Mitglied der Gemeinde
+                  option(value='1') Action 1
+                  option(value='2') Action 2
+                  option(value='3') Action 3
+          div
+            .newsletter__form-field
+              label
+                select(name='')
+                  option(value='0' selected hidden) Interessierter
+                  option(value='1') Action 1
+                  option(value='2') Action 2
+                  option(value='3') Action 3
+
+        .newsletter__form-field
+          .c-btn__wrapper.c-btn__wrapper--center
+            button.c-btn(type='submit') Anfordern
+
+
+// SECTION :: END
