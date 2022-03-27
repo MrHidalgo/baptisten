@@ -15,12 +15,12 @@ nav#header.header
       .header__wrapper-right
 
         nav.header__nav
-          a.is-active(href="/index.html") Startseite
-          a(href="/about.html") Über Uns
-          a(href="/sub-communities.html") Teilgemeinden
-          a(href="/media.html") Medien
-          a(href="/current.html") Aktuelles
-          a(href="/facilities.html") Einrichtungen
-          a(href="/contact.html") Kontakt
+          a(class!= (pageClassName === 'p-home')?'is-active':'' href="/index.html") Startseite
+          a(class!= (pageClassName === 'p-about')?'is-active':'' href="/about.html") Über Uns
+          a(class!= (pageClassName === 'p-sub-community')?'is-active':'' href="/sub-communities.html") Teilgemeinden
+          a(class!= (pageClassName === 'p-media')?'is-active':'' href="/media.html") Medien
+          a(class!= (pageClassName === 'p-current')?'is-active':'' href="/current.html") Aktuelles
+          a(class!= (pageClassName === 'p-facilities')?'is-active':'' href="/facilities.html") Einrichtungen
+          a(class!= (pageClassName === 'p-contact')?'is-active':'' href="/contact.html") Kontakt
 
 // HEADER :: END

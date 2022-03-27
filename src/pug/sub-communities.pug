@@ -1,0 +1,15 @@
+---
+title: Bap Tis Ten | Sub Community
+
+pageClassName: p-sub-community
+---
+extends shared/_layout
+
+block footer
+block content
+  main.main.main--start(class!= pageClassName)
+
+    +heading('sub-community', 'img-teilgemeinden-bg.png', 'Teilgemeinden')
+
+    include components/sub-communities/map
+

@@ -1,0 +1,48 @@
+// SECTION :: START
+
+.map {
+  padding-top: 200px;
+  padding-bottom: 150px;
+  @include adaptive(1279) {
+    padding-top: 150px;
+    padding-bottom: 100px;
+  }
+
+  &__wrapper {
+    overflow: hidden;
+    position: relative;
+    height: 900px;
+    transform: skewY(-4deg);
+    @include adaptive(1439) {
+      height: 800px;
+    }
+    @include adaptive(1365) {
+      height: 700px;
+    }
+    @include adaptive(1279) {
+      height: 700px;
+    }
+    @include adaptive(1023) {
+      height: 600px;
+    }
+    @include adaptive(767) {
+      height: 400px;
+    }
+
+    img {
+      @extend %imageResCoverAbs;
+      top: -100px;
+      height: calc(100% + 200px);
+      transform: skewY(4deg);
+    }
+  }
+
+  &__desc {
+    padding-bottom: 100px;
+    @include adaptive(1279) {
+      padding-bottom: 75px;
+    }
+  }
+}
+
+// SECTION :: END
