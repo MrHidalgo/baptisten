@@ -1,17 +1,16 @@
 // SUBTITLE :: START
 
-.c-subtitle {
-  padding-bottom: 10px;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 42px;
+.c-label {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
   text-align: center;
   color: #000000;
   @include adaptive(1279) {
-    font-size: 33px;
+    font-size: 20px;
   }
   @include adaptive(767) {
-    font-size: 30px;
+    font-size: 18px;
   }
 }
 
