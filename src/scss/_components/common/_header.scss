@@ -25,6 +25,13 @@
         min-width: 1px;
         max-width: 100%;
       }
+
+      .hamburger {
+        display: none;
+        @include adaptive(1279) {
+          display: flex;
+        }
+      }
     }
 
     &-right {

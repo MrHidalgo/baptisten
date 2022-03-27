@@ -32,6 +32,9 @@ body {
   font-family: 'Raleway', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  @include adaptive(767) {
+    padding-top: 80px;
+  }
 
   > .main {
     display: flex;
