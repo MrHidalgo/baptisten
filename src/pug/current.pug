@@ -1,0 +1,15 @@
+---
+title: Bap Tis Ten | Current
+
+pageClassName: p-current
+---
+extends shared/_layout
+
+block footer
+block content
+  main.main.main--start(class!= pageClassName)
+
+    +heading('current', 'img-current-bg.jpg', 'Aktuelles')
+
+    include components/homepage/newsletter
+    include components/current/last

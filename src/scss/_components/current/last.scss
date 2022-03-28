@@ -1,0 +1,69 @@
+// SECTION :: START
+
+.last {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  @include adaptive(1279) {
+    padding-top: 0;
+  }
+
+  &__desc {
+    padding-bottom: 40px;
+  }
+
+  &__wrapper {
+    position: relative;
+
+    > img {
+      z-index: 2;
+      position: relative;
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  &__line {
+    z-index: 0;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+
+    span {
+      position: relative;
+      display: block;
+      transform: rotate(-4deg);
+
+      &:nth-of-type(1) {
+        z-index: 2;
+        top: 20px;
+        left: -20px;
+        width: 85%;
+        height: 91px;
+        background-color: #57B1D8;
+        @include adaptive(767) {
+          top: 0;
+          left: 0;
+          width: 120%;
+        }
+      }
+      &:nth-of-type(2) {
+        z-index: 1;
+        width: 100%;
+        height: 110px;
+        background-color: #31AD67;
+        @include adaptive(767) {
+          width: 120%;
+        }
+      }
+    }
+  }
+}
+
+// SECTION :: END
