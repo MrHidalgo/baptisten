@@ -1,0 +1,56 @@
+// SECTION :: START
+
+mixin facilitiesBlock(logoName, desc)
+  .facilities__block
+    .facilities__block-bg
+
+    .c-grid
+      .facilities__block-logo
+        img(src="img/" + logoName + '.png' srcset='img/' + logoName + '@2x.png 2x' alt="")
+      p.facilities__block-desc!= desc
+      .c-btn__wrapper.c-btn__wrapper--center
+        a.c-btn(href="#") Mehr erfahren
+
+section#facilities.facilities
+  .facilities__container.facilities__container-1
+    .c-grid
+
+      .c-line
+      h2.facilities__title.c-title Unsere Einrichtungen
+      p.facilities__desc.c-desc Unsere Partner
+
+    .facilities__block-wrapper
+      div
+        +facilitiesBlock('img-facilities-1', 'Wir sind gestartet, mit veränderten Seminarangeboten. Ein Buch oder Thema kompakt an vier Abenden. Für jede/n an der Bibel Interessierte/n oder wenn Dein Glaube sich verändert, Du neue Fragen und Impulse hast oder Du eine Schulung als Mitarbeiter/in suchst. Freut euch auf ein interessantes und ermutigendes Jahresprogramm...')
+      div
+        +facilitiesBlock('img-facilities-2', 'Leben bricht sich Bahn ... im Diakoniewerk Kirchröder Turm.<br>Uns liegen Menschen am Herzen - Menschen, die unsere Angebote nutzen möchten und die wir gerne achtsam, wertschätzend und kompetent begleiten.<br>Im Jahre 1948 wurde unser Werk gegründet. Es ist entstanden aus einer diakonischen Arbeit der Evangelisch-Freikirchlichen Gemeinden in der Stadt und Region Hannover. Diese Gemeinden (Evangelisch-Freikirchliche Gesamtgemeinde Hannover KdöR –  www.baptisten-hannover.de) sehen uns als konkreten diakonischen Ausdruck ihrer Kirche.')
+      div
+        +facilitiesBlock('img-facilities-3', 'Das soziale Kaufhaus AUSTAUSCH macht preiswerte Angebote für gespendete Kleidung und Haushaltswaren. Darüber hinaus möchte es vielen Hannoveranern Raum für Begegnung, Vernetzung und Hilfe geben. Ob neu Hinzugezogene oder seit langem hier Beheimatete – jeder kann sich im AUSTAUSCH ehrenamtlich engagieren, als Helfer, Spender oder Förderer.')
+      div
+        +facilitiesBlock('img-facilities-4', 'Seit Januar 2010 ist unser Kinder- und Jugendhaus ViWA auch an den Vormittagen innerhalb der Woche von Kinderstimmen erfüllt. Zehn 1- bis 3jährige ViWALDIS haben ihre Räume in Besitz genommen und bringen jede Menge Leben in die Villa in der Waldstraße (ViWA).<br>Ein Team von 3 ausgebildeten Fachkräften unter der Leitung von Sabrina von Hopffgarten nimmt sich der Bedürfnisse der kleinen Wirbelwinde von 8.00 bis 14.00 Uhr an. Dabei werden sie von einer engagierten Elternschaft und einem tatkräftigen Beirat unterstützt.')
+      div
+        +facilitiesBlock('img-facilities-5', 'Wir sindein Evangelisch-Freikirchliches Sozialwerk und bringen damit unsere konfessionelle Beziehung und unseren sozial-diakonischen Auftrag zum Ausdruck.<br>Unser Name „LebensTRaum“ verbindet die drei Begriffe „Leben“, „Raum“ und „Traum“. Dem Leben Raum zu geben, Wünsche und Visionen für eine gute persönliche Entwicklung jedes Kindes anzuregen und zu fördern, soll Leitgedanke aller Einrichtungen sowie unserer Mitarbeiterinnen und Mitarbeiter sein. Das Angebot christlicher Werte für die Gestaltung des persönlichen Lebenstraums ist ein wesentlicher Bestandteil dieser sozial-diakonischen Arbeit.')
+      div
+        +facilitiesBlock('img-facilities-6', 'Wir möchten Kinder unterstützen und ihnen zeigen, dass sie einmalig, begabt und wertvoll sind. Dies geschieht mit hohem Engagement und Herzblut seit mittlerweile 25 Jahren in Vahrenheide als “Stadtteil mit besonderem sozialen Handlungsbedarf” und wird geleitet durch eine Sozialpädagogin.Wir wollen jedem Kind gleich welchem kulturellen, sozialen und religiösen Hintergrundes in Annahme und Wertschätzung begegnen. Jedes Kind soll unabhängig von der eigenen familiären und sozialen Erlebniswelt erfahren können, dass es wertvoll, begabt und gewollt ist.')
+      div
+        +facilitiesBlock('img-facilities-7', 'Die Flüchtlingswohnheime „Hildesheimer Straße“ und „Grazer Straße“ sind Wohnangebote der Stadt Hannover für Asylbewerber und Spätaussiedler, die sich in Hannover aufhalten. Trägerin der Einrichtungen ist die Gemeinde am Döhrener Turm. Sie betreut im „Flüwo Hildesheimer Straße“ seit 1993 die von der Stadt Hannover zugewiesenen Menschen und unterhält das Gebäude und die Anlage. Das Wohnheim „Grazer Straße“ wurde im Frühjahr 2016 eröffnet.')
+      div
+        +facilitiesBlock('img-facilities-8', 'Offenes Wohnzimmer für alle Teenager und Jugendlichen des Stadtteils mit Sportraum, Chill-Lounge, PS4, Billiard, Krökeltisch, und vielem mehr! Öffnungszeiten: Mo - Fr 16.00 - 20.00 Uhr. Dank unserer guten Kontakte (Jugendgerichtshilfe, Jugendschutz, andere Jugendeinrichtungen,…) können wir bei fast allen Lebensfragen oder Problemlagen Hilfe anbieten.')
+      div
+        +facilitiesBlock('img-facilities-9', 'Der Kindertreffpunkt butze 22 im Wohnquartier „Am Spargelacker“ in Bemerode ist ein Platz, an dem Kinder aller Nationen willkommen sind. Die offene Einrichtung ist grundsätzlich für Kinder im Alter 8-14 Jahren geöffnet – auf Grund der Nachfrage ist, nach Absprache, schon eine Teilnahme ab 6 Jahren möglich. Das internationale Mitarbeiterteam beachtet, begleitet, fordert und fördert die Kinder unter dem Motto „Ich bin wertvoll, Du auch“ und setzt sich nachhaltig für die Integration der Kinder ein. Der Leiterin Hanna Ates wurde für ihre Arbeit die Ehrenplakette vom Stadtbezirksrat Kirchrode-Bemerode-Wülferode verliehen.')
+      div
+        +facilitiesBlock('img-facilities-10', 'Viele Kinder aus unseren Flüchtlingswohnheimen gehen nach der Schule ins nahegelegene Schülerbistro – ein wichtiger Kooperationspartner für unsere Flüchtlingswohnheime. Das Schübi ist eine offene Kinder- und Jugendeinrichtung. Hier gibt es Mittagessen, Sprachförderung, Hausaufgabenhilfe, Spiele und Aktionen – auch während der Schulferien.<br>Träger dieser Einrichtung sind die Gemeinde am Döhrener Turm und der Jugendverband der Evangelischen Freikirchen in Hannover, kurz JEF. Finanziert wird das Angebot von der Stadt Hannover. Die Gemeinde am Döhrener Turm, in direkter Nachbarschaft unserer Flüwos, stellt für das Schübi ihre Räumlichkeiten zur Verfügung und begleitet die Arbeit durch einen ehrenamtlichen Trägerkreis.')
+      div
+        +facilitiesBlock('img-facilities-11', 'Suchet der Stadt Bestes und betet für sie zum HERRN.<br>(Jeramia 29, 7)<br>Das ist das Leitmotto für die Arbeit unserer Kindertagesstätten, welches uns seit den Anfängen im Jahr 1991 begleitet. Mittlerweile sind daraus drei Kindertagesstätten entstanden: das Abenteuerland, das Auenland und das Regenbogenland. Dort werden 225 Kinder in 11 Krippen-, Kindergarten- und Hortgruppen von 42 pädagogischen Fachkräften betreut.<br>Seit dem 1. August 2020 sind die Kindertagesstätten in eine eigene Rechtsform überführt worden: die LebensTRaum – Evangelisch-Freikirchliches Sozialwerk Neustadt am Rübenberge – gGmbH.')
+
+  .facilities__container.facilities__container-2
+    .c-grid
+
+      .c-line
+      h2.facilities__title.c-title Befreundete Einrichtungen
+
+    .facilities__block-wrapper
+      div
+        +facilitiesBlock('img-facilities-1', 'Hoffnung leben....denn es gibt keinen hoffnunglosen Fall.<br>Seit nun 50 Jahren engagieren wir uns für Menschen, die eine Drogen- und Suchtproblematik haben. Wir bieten fachlich sinn-, wert- und beziehungsorientierte Hilfen auf christlicher Basis an. Sie erhalten bei uns eine nahtlos ineinander verzahnte Kette von Angeboten. Dabei liegt unser Schwerpunkt auf der medizinischen Rehabilitation von Menschen, die von illegalen Drogen abhängig sind. Auch medienabhängigen Personen bieten wir in Einzelfällen therapeutische Hilfe an.')
+
+// SECTION :: END

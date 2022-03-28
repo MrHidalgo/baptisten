@@ -1,0 +1,14 @@
+---
+title: Bap Tis Ten | Facilities
+
+pageClassName: p-facilities
+---
+extends shared/_layout
+
+block footer
+block content
+  main.main.main--start(class!= pageClassName)
+
+    +heading('facilities', 'img-facilities-bg.png', 'Einrichtungen')
+
+    include components/facilities/facilities
