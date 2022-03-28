@@ -1,0 +1,130 @@
+// SECTION :: START
+
+.service {
+  padding-top: 70px;
+  padding-bottom: 100px;
+  @include adaptive(1279) {
+    padding-top: 50px;
+  }
+
+  &__title {
+    padding-bottom: 10px;
+  }
+
+  &__desc {
+    padding-bottom: 40px;
+  }
+
+  &__video {
+    z-index: 2;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    @include adaptive(1023) {
+      height: 400px;
+    }
+    @include adaptive(767) {
+      height: 250px;
+    }
+
+    > img {
+      @extend %imageResCoverAbs;
+    }
+
+    > a {
+      z-index: 2;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        @include adaptive(1023) {
+          max-width: 80px;
+        }
+        @include adaptive(767) {
+          max-width: 50px;
+        }
+      }
+    }
+
+    &-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &-wrapper {
+      position: relative;
+      width: 100%;
+      max-width: 925px;
+    }
+
+    &-bg {
+      z-index: 0;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+
+      span {
+        position: absolute;
+        transform: rotate(-4deg);
+
+        &:nth-of-type(1) {
+          top: 25%;
+          left: -100px;
+          width: 165px;
+          height: 45px;
+          background-color: #57B1D8;
+        }
+        &:nth-of-type(2) {
+          top: 15%;
+          right: -80px;
+          width: 121px;
+          height: 32px;
+          background-color: #F8B235;
+        }
+        &:nth-of-type(3) {
+          top: 18%;
+          right: -70px;
+          width: 121px;
+          height: 40px;
+          background-color: #57B1D8;
+        }
+        &:nth-of-type(4) {
+          bottom: 20%;
+          left: -60px;
+          width: 130px;
+          height: 38px;
+          background-color: #F8B235;
+        }
+        &:nth-of-type(5) {
+          bottom: 15%;
+          left: -100px;
+          width: 141px;
+          height: 35px;
+          background-color: #31AD67;
+        }
+        &:nth-of-type(6) {
+          bottom: 15%;
+          right: -100px;
+          width: 146px;
+          height: 35px;
+          background-color: #31AD67;
+        }
+      }
+    }
+  }
+}
+
+// SECTION :: END
