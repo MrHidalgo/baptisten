@@ -1,0 +1,173 @@
+// SECTION :: START
+
+.person {
+  position: relative;
+  padding-top: 125px;
+  padding-bottom: 125px;
+  margin-bottom: 150px;
+  @include adaptive(767) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  &__bg {
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fabf66;
+    transform: skewY(-4deg);
+  }
+
+  &__wrapper {
+    z-index: 2;
+    position: relative;
+  }
+
+  &__line {
+    background-color: #57b1d8;
+  }
+
+  &__title {
+    padding-bottom: 40px;
+    color: #57b1d8;
+  }
+
+  &__box {
+    display: flex;
+    align-items: center;
+    @include adaptive(767) {
+      flex-wrap: wrap;
+
+      &-2 {
+        flex-direction: column-reverse;
+      }
+    }
+
+    > div {
+      flex: 1;
+      min-width: 1px;
+      max-width: 100%;
+      @include adaptive(767) {
+        flex: 100%;
+
+        &:nth-of-type(2) {
+
+        }
+      }
+    }
+
+    &-wrapper {
+      display: flex;
+      flex-direction: column;
+
+      > div {
+        & + div {
+          padding-top: 50px;
+        }
+      }
+    }
+
+    &-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+
+      span {
+        position: absolute;
+        top: 50%;
+        transform: rotate(-4deg) translateY(-50%);
+
+        &:nth-of-type(1) {
+          z-index: 2;
+          left: -50px;
+          width: calc(100% + 100px);
+          height: 25px;
+          background-color: #A8CF89;
+        }
+        &:nth-of-type(2) {
+          z-index: 1;
+          top: calc(50% + 20px);
+          left: -75px;
+          width: calc(100% + 150px);
+          height: 35px;
+          background-color: #57B1D8;
+        }
+      }
+    }
+
+    &-user {
+      position: relative;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      @include adaptive(767) {
+        padding-bottom: 10px;
+      }
+
+      > div {
+        &:nth-of-type(1) {
+          position: relative;
+          width: 240px;
+          height: 240px;
+          border-radius: 50%;
+          @include adaptive(767) {
+            width: 200px;
+            height: 200px;
+          }
+
+          img {
+            z-index: 5;
+            @extend %imageResCoverAbs;
+            border-radius: 50%;
+          }
+        }
+      }
+    }
+
+    &-name {
+      padding-top: 15px;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 28px;
+      color: #000000;
+      text-align: center;
+      @include adaptive(1279) {
+        font-size: 22px;
+      }
+      @include adaptive(767) {
+        font-size: 20px;
+      }
+    }
+
+    &-desc {
+      width: 100%;
+      max-width: 580px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 10px;
+      padding-right: 10px;
+      font-weight: 400;
+      font-size: 22px;
+      line-height: 26px;
+      text-align: center;
+      color: #000000;
+      @include adaptive(1279) {
+        font-size: 20px;
+      }
+      @include adaptive(767) {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+// SECTION :: END
