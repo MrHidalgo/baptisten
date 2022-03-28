@@ -1,0 +1,14 @@
+---
+title: Bap Tis Ten | Media
+
+pageClassName: p-media
+---
+extends shared/_layout
+
+block footer
+block content
+  main.main.main--start(class!= pageClassName)
+
+    +heading('media', 'img-media-bg.png', 'Medien')
+
+    include components/media/news

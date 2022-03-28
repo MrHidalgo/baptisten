@@ -28,6 +28,7 @@
     > img {
       z-index: 1;
       @extend %imageResCoverAbs;
+      filter: blur(2px);
     }
 
     &:after {
