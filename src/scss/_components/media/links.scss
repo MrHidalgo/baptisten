@@ -1,0 +1,127 @@
+// SECTION :: START
+
+.links {
+  padding-top: 50px;
+  padding-bottom: 70px;
+
+  &__title {
+    padding-bottom: 10px;
+  }
+
+  &__desc {
+    padding-bottom: 40px;
+  }
+
+  &__box {
+    display: flex;
+    align-items: center;
+    padding: 30px 0;
+    transform: skewY(-4deg);
+    background: rgba(248, 178, 53, 0.65);
+    @include adaptive(767) {
+      flex-wrap: wrap;
+    }
+
+    &-left,
+    &-middle,
+    &-right {
+      flex: 1;
+      min-width: 1px;
+      max-width: 100%;
+      @include adaptive(767) {
+        flex: 100%;
+      }
+    }
+
+    &-left {
+      @include adaptive(1279) {
+        display: none;
+      }
+    }
+
+    &-middle {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @include adaptive(767) {
+        padding-bottom: 30px;
+      }
+
+      > div {
+        width: 100%;
+        max-width: 370px;
+        margin-left: auto;
+        margin-right: auto;
+        transform: skewY(4deg);
+      }
+
+      p {
+        padding-bottom: 20px;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 31px;
+        text-align: center;
+        color: #000000;
+        @include adaptive(767) {
+          font-size: 22px;
+          line-height: normal;
+        }
+      }
+
+      .c-btn {
+        border-color: #57B1D8;
+        background-color: #57b1d8;
+        color: #ffffff;
+
+        &:hover {
+          background-color: transparent;
+          color: #000000;
+        }
+      }
+    }
+
+    &-right {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 30px 10px;
+      background-color: #ffffff;
+      transform: skewY(4deg) rotate(-4deg);
+      @include adaptive(767) {
+        transform: skewY(4deg) rotate(-4deg) translateX(50px);
+        padding-right: 50px;
+      }
+
+      &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: -50px;
+        width: calc(100% + 50px);
+        height: 100%;
+        background-color: #ffffff;
+      }
+
+      img {
+        z-index: 2;
+        position: relative;
+        display: block;
+        max-width: 100%;
+        height: auto;
+        transform: rotate(4deg);
+      }
+    }
+
+    &-wrapper {
+      display: flex;
+      flex-direction: column;
+
+      > div {
+        padding-bottom: 30px;
+      }
+    }
+  }
+}
+
+// SECTION :: END
