@@ -1,0 +1,106 @@
+// SECTION :: START
+
+.gallery {
+  padding-bottom: 100px;
+  @include adaptive(1279) {
+    padding-bottom: 75px;
+  }
+  @include adaptive(767) {
+    padding-bottom: 50px;
+  }
+
+  &__title {
+    padding-bottom: 10px;
+  }
+
+  &__desc {
+    padding-bottom: 40px;
+  }
+
+  &__box {
+    &-wrapper {
+      display: flex;
+      flex-direction: column;
+
+      img {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+
+    &-top {
+      display: flex;
+      @include adaptive(767) {
+        flex-wrap: wrap;
+      }
+    }
+
+    &-left,
+    &-right {
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+
+      > div {
+        padding-bottom: 30px;
+        @include adaptive(767) {
+          padding-bottom: 10px;
+        }
+      }
+    }
+
+    &-left {
+      flex: 1;
+      min-width: 1px;
+      max-width: 100%;
+      padding-right: 30px;
+      @include adaptive(767) {
+        flex: 100%;
+        padding-right: 0;
+      }
+
+      > div {
+        flex: 1;
+      }
+    }
+
+    &-right {
+      width: 40%;
+      @include adaptive(767) {
+        width: 100%;
+      }
+    }
+
+    &-bottom {
+      display: flex;
+      @include adaptive(767) {
+        flex-wrap: wrap;
+      }
+
+      > div {
+        &:nth-of-type(1) {
+          width: 40%;
+          @include adaptive(767) {
+            width: 100%;
+            padding-bottom: 10px;
+          }
+        }
+        &:nth-of-type(2) {
+          flex: 1;
+          min-width: 1px;
+          max-width: 100%;
+          padding-left: 30px;
+          @include adaptive(767) {
+            flex: 100%;
+            padding-left: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+// SECTION :: END
