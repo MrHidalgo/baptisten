@@ -1,0 +1,14 @@
+---
+title: Bap Tis Ten | Contact Us
+
+pageClassName: p-contact
+---
+extends shared/_layout
+
+block footer
+block content
+  main.main.main--start(class!= pageClassName)
+
+    +heading('contact', 'img-contact-bg.png', 'Kontakt')
+
+    include components/contact/form

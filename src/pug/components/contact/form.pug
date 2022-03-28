@@ -1,0 +1,62 @@
+// SECTION :: START
+
+section#form.form
+  .c-grid
+
+    .c-line
+    h2.form__title.c-title Kontaktformular
+    p.form__desc.c-desc Der einfachste Weg uns zu kontaktieren
+
+    .form__wrapper
+      .form__wrapper-left
+
+        form.newsletter__form(action='' method='' autocomplete='off')
+
+          p.newsletter__form-info Bitte füllen Sie die Felder mit einem * aus (Pflichtfelder)
+
+          .newsletter__form-group.newsletter__form-group--33
+            div
+              .newsletter__form-field
+                label
+                  input(type='text' placeholder='Name*' required)
+            div
+              .newsletter__form-field
+                label
+                  input(type='email' placeholder='Email*' required)
+            div
+              .newsletter__form-field
+                label
+                  input(type='text' placeholder='Betreff*' required)
+
+          .newsletter__form-field
+            label
+              textarea(placeholder='Nachricht*')
+
+          .newsletter__form-field
+            .newsletter__form-checked
+              input(type='checkbox' name='' id='form_check')
+              label(for='form_check')
+                i
+                span Ich habe die Datenschutzerklärung zur Kenntnis genommen. Ich stimme zu, dass meine Angaben und Daten zur Beantwortung meiner Anfrage elektronisch erhoben und gespeichert werden.
+
+          .newsletter__form-field
+            p.newsletter__form-message Hinweis: Sie können Ihre Einwilligung jederzeit für die Zukunft per E-Mail an team@etarix.com widerrufen.
+
+          .newsletter__form-field
+            .c-btn__wrapper.c-btn__wrapper--center
+              button.c-btn(type='submit') Absenden
+
+      .form__wrapper-right
+
+        .form__box-wrapper
+          div
+            .form__box.form__box-1
+              a(href="#") beispiel@mail.de
+          div
+            .form__box.form__box-2
+              a(href="#") 0511 49482492
+          div
+            .form__box.form__box-3
+              p Hans-Peter Pfeifenbring
+
+// SECTION :: END
