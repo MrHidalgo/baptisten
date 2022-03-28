@@ -1,0 +1,49 @@
+// SECTION :: START
+
+mixin parishesBox(classMod, imgName, title, address, tel)
+  .parishes__wrapper(class!= (classMod)?'parishes__wrapper--' + classMod:'')
+    .parishes__wrapper-left
+      img(src="img/" + imgName + ".png" srcset="img/" + imgName + "@2x.png 2x" alt="")
+      p!= title
+    .parishes__wrapper-right
+      div
+        ul
+          li
+            img(src="img/icon-address.svg" alt="")
+            span!= address
+          li
+            img(src="img/icon-telephon.svg" alt="")
+            span!= tel
+        .parishes__btn.c-btn__wrapper
+          a.c-btn(href="#") MEHR ERFAHREn
+
+
+section#parishes.parishes
+  .c-grid
+
+    .c-line
+    h2.parishes__title.c-title Liste unserer Gemeinden
+
+  +parishesBox('', 'img-parishes-1', 'Hannover-<br>Walderseestraßse', 'Walderseestraße 10, 30177 Hannover', '0157 - 87714870')
+  .parishes__block
+  +parishesBox('reverse', 'img-parishes-2', 'Hannover-LInden', 'Hohe Straße 14, 30449 Hannover', '0511 - 453178')
+  .parishes__block
+  +parishesBox('', 'img-parishes-3', 'Barsinghausen', 'Einsteinstraße 3, 30890 Barsinghausen', '05105 - 5911062')
+  .parishes__block
+  +parishesBox('reverse', 'img-parishes-3', 'Langenhagen', 'Godshorner Straße 15, 30851 Langenhagen', '0511 - 773724')
+  .parishes__block
+  +parishesBox('', 'img-parishes-4', 'Lehrte', 'Köhlerheide 2, 31275 Lehrte', '05132 - 93728')
+  .parishes__block
+  +parishesBox('reverse', 'img-parishes-5', 'Hannover-Südstadt', 'Gemeinde am Döhrener Turm<br>(Hannover-Südstadt)<br>Hildesheimer Straße 179, 30173 Hannover', '0511 - 839380')
+  .parishes__block
+  +parishesBox('', 'img-parishes-6', 'Neustadt a. RBGE.', 'Nienburger Straße 15, 31515 Neustadt a. Rbge.', '05032 - 3137')
+  .parishes__block
+  +parishesBox('reverse', 'img-parishes-7', 'Hannover-Roderbruch', 'Heidering 35, 30625 Hannover', '0511 - 8972931')
+  .parishes__block
+  +parishesBox('', 'img-parishes-8', 'IsernHagen', 'Gutenbergstraße 1, <br>30916 Isernhagen (NB)', '05139 - 9528440')
+  .parishes__block
+  +parishesBox('reverse', 'img-parishes-9', 'Wunstorf', 'Amtshausweg 23, 31515 Wunstorf', '05031 - 6892454')
+  .parishes__block
+  +parishesBox('reverse', 'img-parishes-10', 'Hannover-Kronsberg', 'im Ev. Kirchenzentrum Kronsberg <br>Thie 8/Sticksfeld 6,30539 Hannover', '0157 - 87714870')
+
+// SECTION :: END

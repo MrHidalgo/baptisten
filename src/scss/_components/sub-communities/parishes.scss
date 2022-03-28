@@ -1,0 +1,196 @@
+// SECTION :: START
+
+.parishes {
+  padding-top: 50px;
+  padding-bottom: 150px;
+  @include adaptive(767) {
+    padding-top: 25px;
+    padding-bottom: 100px;
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    transform: skewY(-4deg);
+    height: 400px;
+    @include adaptive(767) {
+      height: auto;
+      flex-wrap: wrap;
+    }
+
+    &--reverse {
+      flex-direction: row-reverse;
+
+      .parishes__wrapper-right {
+        margin-left: auto;
+      }
+    }
+
+    &-left {
+      overflow: hidden;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 55%;
+      min-height: 100%;
+      padding: 20px 30px;
+      @include adaptive(767) {
+        width: 100%;
+        height: 200px;
+        padding: 10px;
+      }
+
+      img {
+        z-index: 1;
+        @extend %imageResCoverAbs;
+        top: -50px;
+        height: calc(100% + 100px);
+
+      }
+
+      &:after {
+        content: '';
+        z-index: 2;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(248, 178, 53, 0.4);
+      }
+
+      p {
+        z-index: 3;
+        position: relative;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 56px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #000000;
+        transform: skewY(4deg);
+        @include adaptive(1279) {
+          font-size: 44px;
+          line-height: normal;
+        }
+        @include adaptive(1023) {
+          font-size: 36px;
+        }
+        @include adaptive(767) {
+          font-size: 30px;
+        }
+      }
+    }
+
+    &-right {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 45%;
+      @include adaptive(767) {
+        width: 100%;
+      }
+
+      > div {
+        padding: 30px 50px;
+        transform: skewY(4deg);
+        @include adaptive(1023) {
+          padding: 20px 30px;
+        }
+        @include adaptive(767) {
+          padding: 50px 10px;
+        }
+
+        .c-btn {
+          border-color: #A8CF89;
+          background-color: #a8cf89;
+          text-transform: uppercase;
+
+          &:hover {
+            background-color: transparent;
+          }
+
+          &__wrapper {
+            padding-top: 50px;
+            @include adaptive(1279) {
+              padding-top: 30px;
+            }
+            @include adaptive(767) {
+              justify-content: center;
+              padding-top: 20px;
+            }
+          }
+        }
+      }
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        @include adaptive(767) {
+          align-items: center;
+        }
+
+        li {
+          display: flex;
+          align-items: center;
+          padding-bottom: 20px;
+          @include adaptive(767) {
+            flex-direction: column;
+            text-align: center;
+          }
+
+          img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            @include adaptive(767) {
+              max-height: 30px;
+            }
+
+            & + span {
+              padding-left: 30px;
+              @include adaptive(767) {
+                padding-top: 10px;
+                padding-left: 0;
+              }
+            }
+          }
+
+          span {
+            font-size: 20px;
+            line-height: 23px;
+            text-transform: uppercase;
+            color: #000000;
+            @include adaptive(1279) {
+              font-size: 18px;
+              line-height: normal;
+            }
+            @include adaptive(1023) {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__block {
+    width: 100%;
+    height: 180px;
+    transform: skewY(-4deg);
+    box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.1);
+    @include adaptive(767) {
+      height: 100px;
+    }
+  }
+
+  &__title {
+    padding-bottom: 100px;
+    @include adaptive(767) {
+      padding-bottom: 75px;
+    }
+  }
+}
+
+// SECTION :: END
