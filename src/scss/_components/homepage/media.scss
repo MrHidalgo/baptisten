@@ -12,6 +12,9 @@
     width: 100%;
     height: 100%;
     transform: skewY(-4deg);
+    @include respondCustom('(min-width: 1921px)') {
+      transform: skewY(-3deg);
+    }
 
     &:after {
       content: '';
@@ -29,6 +32,9 @@
       top: -100px;
       height: calc(100% + 200px);
       transform: skewY(4deg);
+      @include respondCustom('(min-width: 1921px)') {
+        transform: skewY(3deg);
+      }
     }
   }
 

@@ -82,6 +82,9 @@
     justify-content: center;
     min-height: 100px;
     transform: rotate(-4deg) translateX(-2px);
+    @include respondCustom('(min-width: 1921px)') {
+      transform: rotate(-3deg) translateX(-2px);
+    }
 
     &-1 {
       background-color: #A8CF89;

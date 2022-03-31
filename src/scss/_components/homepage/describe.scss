@@ -41,6 +41,9 @@
       background-color: #ffffff;
       box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.1);
       transform: skewY(-4deg);
+      @include respondCustom('(min-width: 1921px)') {
+        transform: skewY(-3deg);
+      }
     }
   }
 
@@ -96,14 +99,28 @@
       margin-left: auto;
       margin-right: auto;
       @include adaptive(767) {
-        flex-direction: column;
+        flex-wrap: wrap;
         align-items: center;
         transform: translateY(-20px);
 
         > div {
+          display: flex;
+          justify-content: center;
+          width: 100%;
+          max-width: 50%;
+
           &:not(:last-of-type) {
             margin-bottom: 20px;
           }
+
+          &:last-of-type {
+            max-width: 100%;
+          }
+        }
+      }
+      @include adaptive(575) {
+        > div {
+          max-width: 100%;
         }
       }
     }

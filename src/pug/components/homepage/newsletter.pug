@@ -4,15 +4,15 @@ section#newsletter.newsletter
   .c-grid
     .newsletter__wrapper
 
-      .c-line
-      h2.newsletter__title.c-title Newsletter
-      p.newsletter__label.c-label Wir versenden monatlich einen Newsletter. Hier kannst Du Dich dafür anmelden.
+      .c-line(data-aos="fade-up")
+      h2.newsletter__title.c-title(data-aos="fade-up") Newsletter
+      p.newsletter__label.c-label(data-aos="fade-up") Wir versenden monatlich einen Newsletter. Hier kannst Du Dich dafür anmelden.
 
       form.newsletter__form(action='' method='' autocomplete='off')
 
-        p.newsletter__form-info Bitte füllen Sie die Felder mit einem * aus (Pflichtfelder)
+        p.newsletter__form-info(data-aos="fade-up") Bitte füllen Sie die Felder mit einem * aus (Pflichtfelder)
 
-        .newsletter__form-group
+        .newsletter__form-group(data-aos="fade-up")
           div
             .newsletter__form-field
               label
@@ -22,11 +22,11 @@ section#newsletter.newsletter
               label
                 input(type='text' placeholder='Nachname*' required)
 
-        .newsletter__form-field
+        .newsletter__form-field(data-aos="fade-up")
           label
             input(type='email' placeholder='E-Mail Adresse*' required)
 
-        .newsletter__form-group
+        .newsletter__form-group(data-aos="fade-up")
           div
             .newsletter__form-field
               label
@@ -44,7 +44,7 @@ section#newsletter.newsletter
                   option(value='2') Action 2
                   option(value='3') Action 3
 
-        .newsletter__form-field
+        .newsletter__form-field(data-aos="fade-up")
           .c-btn__wrapper.c-btn__wrapper--center
             button.c-btn(type='submit') Anfordern
 

@@ -11,7 +11,10 @@
   }
 
   &__label {
-    padding-bottom: 50px;
+    padding-bottom: 80px;
+    @include adaptive(767) {
+      padding-bottom: 50px;
+    }
   }
 
   &__form {

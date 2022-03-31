@@ -8,21 +8,21 @@ mixin parishesBox(classMod, imgName, title, address, tel)
     .parishes__wrapper-right
       div
         ul
-          li
+          li(data-aos="fade-up")
             img(src="img/icon-address.svg" alt="")
             span!= address
-          li
+          li(data-aos="fade-up")
             img(src="img/icon-telephon.svg" alt="")
             span!= tel
-        .parishes__btn.c-btn__wrapper
+        .parishes__btn.c-btn__wrapper(data-aos="fade-up")
           a.c-btn(href="#") MEHR ERFAHREn
 
 
 section#parishes.parishes
   .c-grid
 
-    .c-line
-    h2.parishes__title.c-title Liste unserer Gemeinden
+    .c-line(data-aos="fade-up")
+    h2.parishes__title.c-title(data-aos="fade-up") Liste unserer Gemeinden
 
   +parishesBox('', 'img-parishes-1', 'Hannover-<br>Walderseestraßse', 'Walderseestraße 10, 30177 Hannover', '0157 - 87714870')
   .parishes__block
@@ -44,6 +44,6 @@ section#parishes.parishes
   .parishes__block
   +parishesBox('reverse', 'img-parishes-9', 'Wunstorf', 'Amtshausweg 23, 31515 Wunstorf', '05031 - 6892454')
   .parishes__block
-  +parishesBox('reverse', 'img-parishes-10', 'Hannover-Kronsberg', 'im Ev. Kirchenzentrum Kronsberg <br>Thie 8/Sticksfeld 6,30539 Hannover', '0157 - 87714870')
+  +parishesBox('', 'img-parishes-10', 'Hannover-Kronsberg', 'im Ev. Kirchenzentrum Kronsberg <br>Thie 8/Sticksfeld 6,30539 Hannover', '0157 - 87714870')
 
 // SECTION :: END

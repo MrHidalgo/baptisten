@@ -11,10 +11,10 @@
   &__wrapper {
     overflow: hidden;
     position: relative;
-    height: 900px;
+    height: 850px;
     transform: skewY(-4deg);
-    @include adaptive(1439) {
-      height: 800px;
+    @include respondCustom('(min-width: 1921px)') {
+      transform: skewY(-3deg);
     }
     @include adaptive(1365) {
       height: 700px;
@@ -26,14 +26,18 @@
       height: 600px;
     }
     @include adaptive(767) {
-      height: 400px;
+      height: 450px;
     }
 
-    img {
+    img,
+    iframe {
       @extend %imageResCoverAbs;
       top: -100px;
       height: calc(100% + 200px);
       transform: skewY(4deg);
+      @include respondCustom('(min-width: 1921px)') {
+        transform: skewY(3deg);
+      }
     }
   }
 

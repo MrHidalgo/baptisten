@@ -125,6 +125,9 @@ window.addEventListener('load', function (ev) {
   }
 
   initHamburger();
+  AOS.init({
+    duration: 800
+  });
 }, false); // EVENT LISTENER - SCROLL
 // ========================================
 

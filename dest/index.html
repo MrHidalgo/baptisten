@@ -26,6 +26,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <!-- STYLE :: START-->
     <link rel="stylesheet" href="css/vendor.css">
     <link rel="stylesheet" href="css/app.css">
@@ -60,17 +61,17 @@
         <div class="describe__wrapper">
           <div class="c-grid">
             <div class="describe__box-wrapper">
-              <div>
+              <div data-aos="fade-up">
                 <div class="describe__box describe__box-1"><img src="img/img-describe-circle-1.svg" alt="">
                   <p>gesamt</p>
                 </div>
               </div>
-              <div>
+              <div data-aos="fade-up">
                 <div class="describe__box describe__box-2"><img src="img/img-describe-circle-2.svg" alt="">
                   <p>gemeinde</p>
                 </div>
               </div>
-              <div>
+              <div data-aos="fade-up">
                 <div class="describe__box describe__box-3"><img src="img/img-describe-circle-3.svg" alt="">
                   <p>hannover</p>
                 </div>
@@ -83,9 +84,9 @@
       <!-- SECTION :: START-->
       <section class="locations" id="locations">
         <div class="c-grid">
-          <div class="c-line"></div>
-          <h2 class="locations__subtitle c-subtitle">Die Standorte unserer 11 Gemeinden</h2>
-          <p class="locations__desc locations__desc-1 c-desc">Klicke auf die Symbole, um mehr zu erfahren.</p>
+          <div class="c-line" data-aos="fade-up"></div>
+          <h2 class="locations__subtitle c-subtitle" data-aos="fade-up">Die Standorte unserer 11 Gemeinden</h2>
+          <p class="locations__desc locations__desc-1 c-desc" data-aos="fade-up">Klicke auf die Symbole, um mehr zu erfahren.</p>
         </div>
         <div class="locations__container locations__container-1">
           <div class="locations__bg locations__bg-1">
@@ -94,8 +95,45 @@
           </div>
           <div class="c-grid">
             <div class="locations__wrapper locations__wrapper-1">
-              <div class="locations__wrapper-left"><img src="img/img-locations-map.svg" alt=""></div>
-              <div class="locations__wrapper-right"><img src="img/img-locations-list.svg" alt=""></div>
+              <div class="locations__wrapper-left"><img src="img/img-locations-map.svg" alt="" data-aos="fade-up"></div>
+              <div class="locations__wrapper-right">
+                <ul class="locations__list" data-aos="fade-up">
+                  <li><a href="#">
+                      <div>Barsinghausen</div>
+                      <div><span><img src="img/icon-locations-list.svg" alt=""></span></div></a></li>
+                  <li><a href="#">
+                      <div>Hannover-Kronsberg</div>
+                      <div><span><img src="img/icon-locations-list.svg" alt=""></span></div></a></li>
+                  <li><a href="#">
+                      <div>Hannover-Linden</div>
+                      <div><span><img src="img/icon-locations-list.svg" alt=""></span></div></a></li>
+                  <li><a href="#">
+                      <div>Hannover-Walderseestraße</div>
+                      <div><span><img src="img/icon-locations-list.svg" alt=""></span></div></a></li>
+                  <li><a href="#">
+                      <div>Hannover-Roderbusch</div>
+                      <div><span><img src="img/icon-locations-list.svg" alt=""></span></div></a></li>
+                  <li><a href="#">
+                      <div>Hannover-Südstadt</div>
+                      <div><span><img src="img/icon-locations-list.svg" alt=""></span></div></a></li>
+                  <li><a href="#">
+                      <div>Isernhagen</div>
+                      <div><span><img src="img/icon-locations-list.svg" alt=""></span></div></a></li>
+                  <li><a href="#">
+                      <div>Langenhagen</div>
+                      <div><span><img src="img/icon-locations-list.svg" alt=""></span></div></a></li>
+                  <li><a href="#">
+                      <div>Lehrte</div>
+                      <div><span><img src="img/icon-locations-list.svg" alt=""></span></div></a></li>
+                  <li><a href="#">
+                      <div>Neustadt a. Rbge.</div>
+                      <div><span><img src="img/icon-locations-list.svg" alt=""></span></div></a></li>
+                  <li><a href="#">
+                      <div>Wunstorf</div>
+                      <div><span><img src="img/icon-locations-list.svg" alt=""></span></div></a></li>
+                </ul>
+                <!--img(src="img/img-locations-list.svg" alt="")-->
+              </div>
             </div>
           </div>
         </div>
@@ -106,10 +144,10 @@
           </div>
           <div class="c-grid">
             <div class="locations__wrapper locations__wrapper-2">
-              <h3 class="locations__title c-title">Aktuelles</h3>
-              <p class="locations__label c-label">Veranstaltungen, Gottesdienste uvm.</p>
-              <p class="locations__desc locations__desc-2 c-desc">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p><img class="locations__poster" src="img/img-locations-poster.svg" alt="">
-              <div class="locations__btn c-btn__wrapper"><a class="c-btn" href="#">Mehr erfahren</a></div>
+              <h3 class="locations__title c-title" data-aos="fade-up">Aktuelles</h3>
+              <p class="locations__label c-label" data-aos="fade-up">Veranstaltungen, Gottesdienste uvm.</p>
+              <p class="locations__desc locations__desc-2 c-desc" data-aos="fade-up">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p><img class="locations__poster" src="img/img-locations-poster.svg" alt="" data-aos="fade-up">
+              <div class="locations__btn c-btn__wrapper" data-aos="fade-up"><a class="c-btn" href="#">Mehr erfahren</a></div>
             </div>
           </div>
         </div>
@@ -120,7 +158,7 @@
         <div class="c-grid">
           <div class="community__wrapper">
             <div class="community__wrapper-left">
-              <div class="community__block-wrapper community__block-wrapper-1">
+              <div class="community__block-wrapper community__block-wrapper-1" data-aos="fade-up">
                 <div class="community__block-bg">
                   <div></div>
                   <div></div>
@@ -131,13 +169,13 @@
               </div>
             </div>
             <div class="community__wrapper-middle">
-              <div class="c-line"></div>
-              <p class="community__label c-label">Unsere</p>
-              <h2 class="community__title c-title">Gemeindeleiter</h2>
-              <p class="community__desc c-desc">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+              <div class="c-line" data-aos="fade-up"></div>
+              <p class="community__label c-label" data-aos="fade-up">Unsere</p>
+              <h2 class="community__title c-title" data-aos="fade-up">Gemeindeleiter</h2>
+              <p class="community__desc c-desc" data-aos="fade-up">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
             </div>
             <div class="community__wrapper-right">
-              <div class="community__block-wrapper community__block-wrapper-2">
+              <div class="community__block-wrapper community__block-wrapper-2" data-aos="fade-up">
                 <div class="community__block-bg">
                   <div></div>
                   <div></div>
@@ -156,10 +194,10 @@
         <div class="media__bg"><img src="img/img-media-bg.png" alt=""></div>
         <div class="c-grid">
           <div class="media__wrapper">
-            <div class="c-line"></div>
-            <h2 class="media__title c-title">Medien</h2>
-            <p class="media__desc">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-            <div class="media__btn c-btn__wrapper c-btn__wrapper--center"><a class="c-btn" href="#">Lesen</a></div>
+            <div class="c-line" data-aos="fade-up"></div>
+            <h2 class="media__title c-title" data-aos="fade-up">Medien</h2>
+            <p class="media__desc c-desc" data-aos="fade-up">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+            <div class="media__btn c-btn__wrapper c-btn__wrapper--center" data-aos="fade-up"><a class="c-btn" href="#">Lesen</a></div>
           </div>
         </div>
       </section>
@@ -168,12 +206,12 @@
       <section class="newsletter" id="newsletter">
         <div class="c-grid">
           <div class="newsletter__wrapper">
-            <div class="c-line"></div>
-            <h2 class="newsletter__title c-title">Newsletter</h2>
-            <p class="newsletter__label c-label">Wir versenden monatlich einen Newsletter. Hier kannst Du Dich dafür anmelden.</p>
+            <div class="c-line" data-aos="fade-up"></div>
+            <h2 class="newsletter__title c-title" data-aos="fade-up">Newsletter</h2>
+            <p class="newsletter__label c-label" data-aos="fade-up">Wir versenden monatlich einen Newsletter. Hier kannst Du Dich dafür anmelden.</p>
             <form class="newsletter__form" action="" method="" autocomplete="off">
-              <p class="newsletter__form-info">Bitte füllen Sie die Felder mit einem * aus (Pflichtfelder)</p>
-              <div class="newsletter__form-group">
+              <p class="newsletter__form-info" data-aos="fade-up">Bitte füllen Sie die Felder mit einem * aus (Pflichtfelder)</p>
+              <div class="newsletter__form-group" data-aos="fade-up">
                 <div>
                   <div class="newsletter__form-field">
                     <label>
@@ -189,12 +227,12 @@
                   </div>
                 </div>
               </div>
-              <div class="newsletter__form-field">
+              <div class="newsletter__form-field" data-aos="fade-up">
                 <label>
                   <input type="email" placeholder="E-Mail Adresse*" required>
                 </label>
               </div>
-              <div class="newsletter__form-group">
+              <div class="newsletter__form-group" data-aos="fade-up">
                 <div>
                   <div class="newsletter__form-field">
                     <label>
@@ -220,7 +258,7 @@
                   </div>
                 </div>
               </div>
-              <div class="newsletter__form-field">
+              <div class="newsletter__form-field" data-aos="fade-up">
                 <div class="c-btn__wrapper c-btn__wrapper--center">
                   <button class="c-btn" type="submit">Anfordern</button>
                 </div>
@@ -234,6 +272,7 @@
     <section class="overlay" id="overlay"></section>
   </body>
   <!-- SCRIPT :: START-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="js/vendor.js"></script>
   <script src="js/app.js"></script>
   <!-- SCRIPT :: END-->

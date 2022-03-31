@@ -32,6 +32,9 @@
       height: calc(100% - 210px);
       background-color: #a8cf89;
       transform: skewY(-4deg);
+      @include respondCustom('(min-width: 1921px)') {
+        transform: skewY(-3deg);
+      }
       @include adaptive(767) {
         top: 185px;
         height: calc(100% - 185px);

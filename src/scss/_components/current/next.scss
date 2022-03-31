@@ -79,6 +79,9 @@
       span {
         position: absolute;
         transform: rotate(-4deg);
+        @include respondCustom('(min-width: 1921px)') {
+          transform: rotate(-3deg);
+        }
 
         &:nth-of-type(1) {
           top: 25%;

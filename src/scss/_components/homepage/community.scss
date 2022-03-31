@@ -2,7 +2,7 @@
 
 .community {
   padding-top: 80px;
-  padding-bottom: 80px;
+  padding-bottom: 150px;
   @include adaptive(767) {
     padding-top: 0;
     padding-bottom: 75px;
@@ -22,6 +22,10 @@
         align-items: center;
         justify-content: center;
         width: 50%;
+      }
+      @include adaptive(575) {
+        width: 100%;
+        margin-bottom: 20px;
       }
     }
 
@@ -47,6 +51,9 @@
         align-items: center;
         justify-content: center;
         width: 50%;
+      }
+      @include adaptive(575) {
+        width: 100%;
       }
     }
   }
@@ -90,15 +97,27 @@
           > div {
             &:nth-of-type(1) {
               transform: rotate(-4deg) translateX(-50%);
+              @include respondCustom('(min-width: 1921px)') {
+                transform: rotate(-3deg) translateX(-50%);
+              }
             }
             &:nth-of-type(2) {
               transform: rotate(-4deg) translate(-90%, 20px);
+              @include respondCustom('(min-width: 1921px)') {
+                transform: rotate(-3deg) translate(-90%, 20px);
+              }
             }
             &:nth-of-type(3) {
               transform: rotate(-4deg) translateX(-85%);
+              @include respondCustom('(min-width: 1921px)') {
+                transform: rotate(-3deg) translateX(-85%);
+              }
             }
             &:nth-of-type(4) {
               transform: rotate(-4deg) translateX(-55%);
+              @include respondCustom('(min-width: 1921px)') {
+                transform: rotate(-3deg) translateX(-55%);
+              }
             }
           }
         }
@@ -111,15 +130,27 @@
           > div {
             &:nth-of-type(1) {
               transform: rotate(-4deg) translateX(50%);
+              @include respondCustom('(min-width: 1921px)') {
+                transform: rotate(-3deg) translateX(50%);
+              }
             }
             &:nth-of-type(2) {
               transform: rotate(-4deg) translate(30%, 10px);
+              @include respondCustom('(min-width: 1921px)') {
+                transform: rotate(-3deg) translate(30%, 10px);
+              }
             }
             &:nth-of-type(3) {
               transform: rotate(-4deg) translateX(70%);
+              @include respondCustom('(min-width: 1921px)') {
+                transform: rotate(-3deg) translateX(70%);
+              }
             }
             &:nth-of-type(4) {
               transform: rotate(-4deg) translateX(25%);
+              @include respondCustom('(min-width: 1921px)') {
+                transform: rotate(-3deg) translateX(25%);
+              }
             }
           }
         }

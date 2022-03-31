@@ -13,6 +13,9 @@
     align-items: center;
     transform: skewY(-4deg);
     height: 400px;
+    @include respondCustom('(min-width: 1921px)') {
+      transform: skewY(-3deg);
+    }
     @include adaptive(767) {
       height: auto;
       flex-wrap: wrap;
@@ -46,7 +49,6 @@
         @extend %imageResCoverAbs;
         top: -50px;
         height: calc(100% + 100px);
-
       }
 
       &:after {
@@ -70,6 +72,9 @@
         text-transform: uppercase;
         color: #000000;
         transform: skewY(4deg);
+        @include respondCustom('(min-width: 1921px)') {
+          transform: skewY(3deg);
+        }
         @include adaptive(1279) {
           font-size: 44px;
           line-height: normal;
@@ -95,6 +100,9 @@
       > div {
         padding: 30px 50px;
         transform: skewY(4deg);
+        @include respondCustom('(min-width: 1921px)') {
+          transform: skewY(3deg);
+        }
         @include adaptive(1023) {
           padding: 20px 30px;
         }
@@ -180,6 +188,9 @@
     height: 180px;
     transform: skewY(-4deg);
     box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.1);
+    @include respondCustom('(min-width: 1921px)') {
+      transform: skewY(-3deg);
+    }
     @include adaptive(767) {
       height: 100px;
     }

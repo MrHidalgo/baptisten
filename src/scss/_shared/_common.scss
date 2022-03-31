@@ -52,6 +52,9 @@
       background-color: #ffffff;
       box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.1);
       transform: skewY(-4deg);
+      @include respondCustom('(min-width: 1921px)') {
+        transform: skewY(-3deg);
+      }
       @include adaptive(767) {
         height: 100px;
       }

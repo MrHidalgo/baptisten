@@ -36,6 +36,10 @@ window.addEventListener('load', (ev) => {
 
   initHamburger();
 
+  AOS.init({
+    duration: 800,
+  });
+
 }, false);
 
 

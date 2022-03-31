@@ -1,7 +1,7 @@
 /// ADDITIONALLY
 /// ===============
-$maxWidth: 1260px;
-$paddingLeft: 10px;
+$maxWidth: 1300px;
+$paddingLeft: 30px;
 $paddingRight: $paddingLeft;
 
 /// MAIN
@@ -13,12 +13,20 @@ $paddingRight: $paddingLeft;
   }
   padding-right: $paddingRight;
   padding-left: $paddingLeft;
+  @include adaptive(767) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 
   &-fluid {
     @extend %grid;
     max-width: 100%;
     padding-right: $paddingRight;
     padding-left: $paddingLeft;
+    @include adaptive(767) {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
   }
 }
 
