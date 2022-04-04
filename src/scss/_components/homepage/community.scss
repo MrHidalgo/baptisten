@@ -11,8 +11,14 @@
   &__wrapper {
     display: flex;
     align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
     @include adaptive(1023) {
       flex-wrap: wrap;
+    }
+    @include adaptive(767) {
+      padding-left: 0;
+      padding-right: 0;
     }
 
     &-left {

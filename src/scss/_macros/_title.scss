@@ -14,6 +14,14 @@
     font-size: 38px;
     line-height: 44px;
   }
+  @include adaptive(374) {
+    font-size: 33px;
+    line-height: 40px;
+  }
+  @include adaptive(319) {
+    font-size: 30px;
+    line-height: 35px;
+  }
 }
 
 // TITLE :: END

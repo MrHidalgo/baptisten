@@ -49,6 +49,27 @@
       }
     }
 
+    &-1 {
+      .person__box-desc {
+        @include adaptive(1023) {
+          padding-left: 40px;
+        }
+        @include adaptive(767) {
+          padding-left: 0;
+        }
+      }
+    }
+    &-2 {
+      .person__box-desc {
+        @include adaptive(1023) {
+          padding-right: 40px;
+        }
+        @include adaptive(767) {
+          padding-right: 0;
+        }
+      }
+    }
+
     > div {
       flex: 1;
       min-width: 1px;
@@ -159,8 +180,6 @@
       max-width: 580px;
       margin-left: auto;
       margin-right: auto;
-      padding-left: 10px;
-      padding-right: 10px;
       font-weight: 400;
       font-size: 22px;
       line-height: 26px;
@@ -168,6 +187,9 @@
       color: #000000;
       @include adaptive(1279) {
         font-size: 20px;
+      }
+      @include adaptive(1023) {
+        font-size: 18px;
       }
       @include adaptive(767) {
         font-size: 18px;

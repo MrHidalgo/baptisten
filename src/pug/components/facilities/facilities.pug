@@ -5,19 +5,19 @@ mixin facilitiesBlock(logoName, desc)
     .facilities__block-bg
 
     .c-grid
-      .facilities__block-logo
+      .facilities__block-logo(data-aos="fade-up")
         img(src="img/" + logoName + '.png' srcset='img/' + logoName + '@2x.png 2x' alt="")
-      p.facilities__block-desc!= desc
-      .c-btn__wrapper.c-btn__wrapper--center
+      p.facilities__block-desc(data-aos="fade-up")!= desc
+      .c-btn__wrapper.c-btn__wrapper--center(data-aos="fade-up")
         a.c-btn(href="#") Mehr erfahren
 
 section#facilities.facilities
   .facilities__container.facilities__container-1
     .c-grid
 
-      .c-line
-      h2.facilities__title.c-title Unsere Einrichtungen
-      p.facilities__desc.c-desc Unsere Partner
+      .c-line(data-aos="fade-up")
+      h2.facilities__title.c-title(data-aos="fade-up") Unsere Einrichtungen
+      p.facilities__desc.c-desc(data-aos="fade-up") Unsere Partner
 
     .facilities__block-wrapper
       div
@@ -46,8 +46,8 @@ section#facilities.facilities
   .facilities__container.facilities__container-2
     .c-grid
 
-      .c-line
-      h2.facilities__title.c-title Befreundete Einrichtungen
+      .c-line(data-aos="fade-up")
+      h2.facilities__title.c-title(data-aos="fade-up") Befreundete Einrichtungen
 
     .facilities__block-wrapper
       div

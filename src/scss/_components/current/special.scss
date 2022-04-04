@@ -90,6 +90,7 @@
           display: block;
           max-width: 100%;
           height: auto;
+          transform: scale(1.2);
 
           & + p {
             padding-left: 10px;
@@ -101,7 +102,7 @@
         }
 
         p {
-          font-weight: 400;
+          font-weight: 600;
           font-size: 20px;
           line-height: 23px;
           color: #000000;
