@@ -169,6 +169,10 @@
         display: block;
         max-width: 100%;
         height: auto;
+        @include adaptive(1023) {
+          margin-left: auto;
+          margin-right: auto;
+        }
       }
     }
 
@@ -221,12 +225,19 @@
     @include adaptive(1023) {
       flex-wrap: wrap;
       flex-direction: row;
+      padding-top: 50px;
     }
 
     li {
       display: flex;
       @include adaptive(1023) {
         width: 50%;
+      }
+      @include adaptive(767) {
+        padding-left: 10px;
+      }
+      @include adaptive(374) {
+        width: 100%;
       }
 
       &:not(:last-of-type) {
@@ -250,11 +261,14 @@
             @include adaptive(1279) {
               font-size: 16px;
             }
+            @include adaptive(1023) {
+              font-size: 18px;
+            }
+            @include adaptive(767) {
+              font-size: 16px;
+            }
             @include adaptive(575) {
               font-size: 14px;
-            }
-            @include adaptive(374) {
-              font-size: 12px;
             }
           }
           &:nth-of-type(2) {
